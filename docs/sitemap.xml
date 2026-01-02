@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:36501/</loc>
+    <loc>http://notarianni.org/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:36501/posts/kata-apb/</loc>
+    <loc>http://notarianni.org/posts/kata-apb/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:36501/posts/</loc>
+    <loc>http://notarianni.org/posts/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:36501/about/</loc>
+    <loc>http://notarianni.org/about/</loc>
   </url><url>
-    <loc>http://localhost:36501/bio/</loc>
+    <loc>http://notarianni.org/bio/</loc>
   </url><url>
-    <loc>http://localhost:36501/categories/</loc>
+    <loc>http://notarianni.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:36501/tags/</loc>
+    <loc>http://notarianni.org/tags/</loc>
   </url>
 </urlset>
