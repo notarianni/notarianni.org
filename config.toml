@@ -1,7 +1,8 @@
 baseURL = "http://notarianni.org/"
 defaultContentLanguage = "fr"
-theme = "shibui"
+theme = "beautifulhugo"
 publishDir = "docs"
+title = "notarianni.org"
 
 [languages]
   [languages.fr]
@@ -16,8 +17,30 @@ publishDir = "docs"
     title = "notarianni.org"
     weight = 2
 
+[params]
+  subtitle = "Blog personnel de Bernard Notarianni"
+  mainSections = ["posts"]
+  logo = ""
+  favicon = "favicon.ico"
+  dateFormat = "2 January 2006"
+  commit = false
+  rss = true
+  comments = false
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+  hideAuthor = false
+  gcse = ""
+  since = 2026
+
 [params.author]
-name = "Bernard Notarianni"
+  name = "Bernard Notarianni"
+  website = "http://notarianni.org"
+  github = "BernardNotarianni"
+  linkedin = "notarianni"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
