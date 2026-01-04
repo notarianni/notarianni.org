@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on notarianni.org</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content in Posts on notarianni.org</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kata APB</title>
+      <link>http://localhost:1313/en/posts/kata-apb/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/kata-apb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.admission-postbac.fr/&#34;&gt;Admission Post Bac&lt;/a&gt; (APB) is the official application of the French Ministry of National Education allowing high school students to obtain enrollment in a post-secondary school or university.&lt;/p&gt;&#xA;&lt;p&gt;The objective of this kata is to design and implement &lt;em&gt;your&lt;/em&gt; version of this application. You are free to choose your algorithm and constraints. You can be inspired by the existing application or invent your own approach.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-description&#34;&gt;Problem Description&lt;/h2&gt;&#xA;&lt;p&gt;Build a program that determines the assignments of a list of students according to a list of available courses.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

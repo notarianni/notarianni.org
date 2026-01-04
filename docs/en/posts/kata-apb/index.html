@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kata APB | notarianni.org</title>
+
+<meta property="og:title" content="Kata APB">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/en/posts/kata-apb/">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon_io/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon_io/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon_io/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon_io/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon_io/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon_io/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon_io/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon_io/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon_io/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon_io/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/favicon_io/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon_io/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+
+</head>
+<body>
+  <header>
+    <nav class="path-nav">
+  <ol>
+    
+  
+    
+  
+    
+  
+  <li>
+    /
+    <a href="/en/">notarianni.org</a>
+    /
+  </li>
+
+  
+  <li>
+    
+    <a href="/en/posts/">Posts</a>
+    /
+  </li>
+
+  
+  <li class="current">
+    
+    <a href="/en/posts/kata-apb/">Kata APB</a>
+    
+  </li>
+
+  </ol>
+</nav>
+
+
+
+
+  </header>
+  <main>
+    
+  <h1>Kata APB</h1>
+  
+
+
+  
+  
+  
+  
+    <nav class="toc">
+      <strong>Table of contents</strong>
+      <div class="toc-content">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#problem-description">Problem Description</a></li>
+    <li><a href="#motivations">Motivations</a></li>
+    <li><a href="#a-simple-solution-example">A Simple Solution Example</a></li>
+  </ol>
+</nav>
+      </div>
+    </nav>
+  
+
+  
+  <p><a href="https://www.admission-postbac.fr/">Admission Post Bac</a> (APB) is the official application of the French Ministry of National Education allowing high school students to obtain enrollment in a post-secondary school or university.</p>
+<p>The objective of this kata is to design and implement <em>your</em> version of this application. You are free to choose your algorithm and constraints. You can be inspired by the existing application or invent your own approach.</p>
+<h2 id="problem-description">Problem Description</h2>
+<p>Build a program that determines the assignments of a list of students according to a list of available courses.</p>
+<p>The program must accept as input:</p>
+<ul>
+<li>The list of students</li>
+<li>The list of courses</li>
+</ul>
+<p>Each student and each course must be identified by a unique name. To feed your algorithm, you can add as much information as necessary to both students and courses.</p>
+<p>The program will provide as a result a list indicating for each student the course that has been assigned to them.</p>
+<h2 id="motivations">Motivations</h2>
+<p>Many katas are somewhat <em>artificial</em>. They offer interest for the algorithms they allow to implement, but have no concrete application for <em>real</em> users. <a href="https://www.admission-postbac.fr/">APB</a>, on the other hand, is used by hundreds of thousands of people and has a determining impact on their lives.</p>
+<p>Nevertheless, the subject remains quite accessible. Everyone can understand the business domain without calling on <em>business experts</em>. People young enough have themselves been confronted with APB and can remember what it can represent, and thus imagine a solution that will seem more suitable to them.</p>
+<p>If this kata meets some success with the computer science community, it becomes possible to find different implementations, with varying levels of complexity but especially with different algorithm criteria choices. We could then compare these algorithms with each other and bring out one or more satisfactory solutions.</p>
+<p>The original code of the first version of the application has been put online on this <a href="https://github.com/jeantil/admission_post_bac">git repo</a>. The bravest can try to decrypt it and perhaps improve it.</p>
+<p>Nevertheless, the simplest probably remains to invent your own version. You can possibly be inspired by existing work, such as for example a <a href="https://en.wikipedia.org/wiki/Stable_marriage_problem">stable marriage</a> algorithm.</p>
+<h2 id="a-simple-solution-example">A Simple Solution Example</h2>
+<p>We offer you here a solution implemented in <a href="https://www.haskell.org/">Haskell</a>.</p>
+<ul>
+<li>There are no selection criteria for entry into courses;</li>
+<li>We distribute students one after the other on the list of available courses;</li>
+<li>The number of places per course is not limited.</li>
+</ul>
+<p>You will find other simple solutions in this <a href="https://github.com/BernardNotarianni/kata-apb">git repository</a>.</p>
+
+  <div class="time"><time datetime="2017-11-18">2017-11-18&nbsp;</time>
+</div>
+
+  
+  
+    <div class="comments">
+
+</div>
+  
+
+  
+    <div class="terminal-nav">
+      <div class="back-nav">
+        <a href="../" class="back-link">../</a>
+      </div>
+    </div>
+  
+
+  </main>
+  <footer>
+    <p>
+  &copy; Copyright 2026 &middot;
+  <a href="https://github.com/ntk148v/shibui">shibui</a>
+</p>
+
+  </footer>
+</body>
+</html>
