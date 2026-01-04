@@ -2,81 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://notarianni.org/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="http://notarianni.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/"
+                href="http://notarianni.org/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/kata-apb/</loc>
+    <loc>http://notarianni.org/posts/kata-apb/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/kata-apb/"
+                href="http://notarianni.org/en/posts/kata-apb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/posts/kata-apb/"
+                href="http://notarianni.org/posts/kata-apb/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://notarianni.org/posts/</loc>
     <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/"
+                href="http://notarianni.org/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/posts/"
+                href="http://notarianni.org/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/bio/</loc>
+    <loc>http://notarianni.org/bio/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://notarianni.org/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/about/"
+                href="http://notarianni.org/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/about/"
+                href="http://notarianni.org/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://notarianni.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="http://notarianni.org/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/"
+                href="http://notarianni.org/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://notarianni.org/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="http://notarianni.org/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/tags/"
+                href="http://notarianni.org/tags/"
                 />
   </url>
 </urlset>

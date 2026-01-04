@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on notarianni.org</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://notarianni.org/posts/</link>
     <description>Recent content in Posts on notarianni.org</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://notarianni.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kata APB</title>
-      <link>http://localhost:1313/posts/kata-apb/</link>
+      <link>http://notarianni.org/posts/kata-apb/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kata-apb/</guid>
+      <guid>http://notarianni.org/posts/kata-apb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.admission-postbac.fr/&#34;&gt;Admission Post Bac&lt;/a&gt; (APB) est&#xA;l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux&#xA;lycéens d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post-&#xA;bac.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;objectif de ce kata est de concevoir et implémenter &lt;em&gt;votre&lt;/em&gt; version de cette&#xA;application. Vous êtes libre de choisir votre algorithme et vos contraintes.&#xA;Vous pouvez vous inspirer de l&amp;rsquo;application existante ou bien inventer votre&#xA;propre approche.&lt;/p&gt;&#xA;&lt;h2 id=&#34;description-du-problème&#34;&gt;Description du problème&lt;/h2&gt;&#xA;&lt;p&gt;Constuisez un programme qui permette de déterminer les affectations d&amp;rsquo;une liste&#xA;d&amp;rsquo;étudiants selon une liste de formations disponibles.&lt;/p&gt;</description>
     </item>
   </channel>

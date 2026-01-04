@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accueil on notarianni.org</title>
-    <link>http://localhost:1313/</link>
+    <link>http://notarianni.org/</link>
     <description>Recent content in Accueil on notarianni.org</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://notarianni.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kata APB</title>
-      <link>http://localhost:1313/posts/kata-apb/</link>
+      <link>http://notarianni.org/posts/kata-apb/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kata-apb/</guid>
+      <guid>http://notarianni.org/posts/kata-apb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.admission-postbac.fr/&#34;&gt;Admission Post Bac&lt;/a&gt; (APB) est&#xA;l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux&#xA;lycéens d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post-&#xA;bac.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;objectif de ce kata est de concevoir et implémenter &lt;em&gt;votre&lt;/em&gt; version de cette&#xA;application. Vous êtes libre de choisir votre algorithme et vos contraintes.&#xA;Vous pouvez vous inspirer de l&amp;rsquo;application existante ou bien inventer votre&#xA;propre approche.&lt;/p&gt;&#xA;&lt;h2 id=&#34;description-du-problème&#34;&gt;Description du problème&lt;/h2&gt;&#xA;&lt;p&gt;Constuisez un programme qui permette de déterminer les affectations d&amp;rsquo;une liste&#xA;d&amp;rsquo;étudiants selon une liste de formations disponibles.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/bio/</link>
+      <link>http://notarianni.org/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bio/</guid>
+      <guid>http://notarianni.org/bio/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Bernard Notarianni&lt;/strong&gt; est créateur de logiciels depuis 1993.&lt;/p&gt;&#xA;&lt;p&gt;Il a participé à l&amp;rsquo;installation du mouvement agile en France&#xA;au sein de l&amp;rsquo;association XP-France, devenue ensuite Agile France.&lt;/p&gt;&#xA;&lt;p&gt;Il est cofondateur de la Société Coopérative Aleryo.&lt;/p&gt;&#xA;&lt;p&gt;Ses centres d&amp;rsquo;intérêts sont l&amp;rsquo;Artisanat Logiciel et la Démocratie.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/notarianni&#34;&gt;https://twitter.com/notarianni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>À propos</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://notarianni.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://notarianni.org/about/</guid>
       <description>&lt;p&gt;Je suis un créateur de logiciels intéressé par l&amp;rsquo;eXtreme Programming et la conception logicielle.&lt;/p&gt;&#xA;&lt;p&gt;Les opinions exprimées sont les miennes et ne reflètent pas celles de mon employeur.&lt;/p&gt;&#xA;&lt;p&gt;Mes articles sont les miens. Mes opinions sont les miennes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/notarianni&#34;&gt;https://twitter.com/notarianni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
