@@ -20,7 +20,6 @@ title = "notarianni.org"
 [params]
   subtitle = "Blog personnel de Bernard Notarianni"
   mainSections = ["posts"]
-  logo = ""
   favicon = "favicon.ico"
   dateFormat = "2 January 2006"
   commit = false
