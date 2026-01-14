@@ -10,8 +10,6 @@ My articles are my own. My opinions are my own.
 
 **Contacts**
 
-Twitter: https://twitter.com/notarianni
-
 Linkedin: https://www.linkedin.com/in/notarianni/
 
 GitHub: https://github.com/BernardNotarianni
