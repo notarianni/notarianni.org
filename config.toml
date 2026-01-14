@@ -1,6 +1,5 @@
 baseURL = "http://notarianni.org/"
 defaultContentLanguage = "fr"
-theme = "beautifulhugo"
 publishDir = "docs"
 title = "notarianni.org"
 
@@ -17,81 +16,8 @@ title = "notarianni.org"
     title = "notarianni.org"
     weight = 2
 
-[params]
-  subtitle = "Blog personnel de Bernard Notarianni"
-  mainSections = ["posts"]
-  favicon = "favicon.ico"
-  dateFormat = "2 January 2006"
-  commit = false
-  rss = true
-  comments = false
-  readingTime = true
-  wordCount = true
-  useHLJS = true
-  socialShare = true
-  delayDisqus = true
-  showRelatedPosts = true
-  hideAuthor = false
-  gcse = ""
-  since = 2026
-
-[params.author]
-  name = "Bernard Notarianni"
-  website = "http://notarianni.org"
-  github = "BernardNotarianni"
-  linkedin = "notarianni"
-
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = false
-    noClasses = true
-    tabWidth = 4
-    style = "monokai"
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 4
-    ordered = true
-
-# Menu français
-[languages.fr.menu]
-  [[languages.fr.menu.main]]
-      name = "Articles"
-      url = "/posts/"
-      weight = 1
-  [[languages.fr.menu.main]]
-      name = "À propos"
-      url = "/about/"
-      weight = 2
-  [[languages.fr.menu.main]]
-      name = "Catégories"
-      url = "/categories/"
-      weight = 3
-  [[languages.fr.menu.main]]
-      name = "Tags"
-      url = "/tags/"
-      weight = 4
-
-# Menu anglais
-[languages.en.menu]
-  [[languages.en.menu.main]]
-      name = "Posts"
-      url = "/en/posts/"
-      weight = 1
-  [[languages.en.menu.main]]
-      name = "About"
-      url = "/en/about/"
-      weight = 2
-  [[languages.en.menu.main]]
-      name = "Categories"
-      url = "/en/categories/"
-      weight = 3
-  [[languages.en.menu.main]]
-      name = "Tags"
-      url = "/en/tags/"
-      weight = 4
