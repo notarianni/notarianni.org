@@ -6,14 +6,113 @@
 <title>About - notarianni.org</title>
 <style>
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+}
+
+nav {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 12px;
+}
+
+ 
+main ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+}
+
+main ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ol li {
+    margin-bottom: 8px;
+}
+
+ 
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.posts-list li {
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
 }
 </style>
 </head>
 <body>
-<p><a href="/en/">Home</a> | <a href="/en/posts/">Posts</a> | <a href="/en/about/">About</a></p>
-<hr>
+<nav>
+
+<a href="/en/">home</a>
+<a href="/en/posts/">posts</a>
+<a href="/en/about/">about</a>
+
+</nav>
+
 
 <h1>About</h1>
 <p>I am a software creator interested in eXtreme Programming and software design.</p>
@@ -25,8 +124,9 @@ body {
 
 
 
-<hr>
-<p><small><a href="/about/">Français</a></small></p>
+<div class="footer">
+<a href="/about/">Français</a>
+</div>
 </body>
 </html>
 

@@ -6,17 +6,122 @@
 <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 <style>
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+}
+
+nav {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Liste de navigation sans bullets */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 12px;
+}
+
+/* Listes dans le contenu avec bullets */
+main ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+}
+
+main ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ol li {
+    margin-bottom: 8px;
+}
+
+/* Liste de posts sans bullets */
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.posts-list li {
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
 }
 </style>
 </head>
 <body>
-<p>{{ if eq .Lang "fr" }}<a href="/">Accueil</a> | <a href="/posts/">Posts</a> | <a href="/about/">À propos</a>{{ else }}<a href="/en/">Home</a> | <a href="/en/posts/">Posts</a> | <a href="/en/about/">About</a>{{ end }}</p>
-<hr>
+<nav>
+{{ if eq .Lang "fr" }}
+<a href="/">accueil</a>
+<a href="/posts/">posts</a>
+<a href="/about/">à propos</a>
+{{ else }}
+<a href="/en/">home</a>
+<a href="/en/posts/">posts</a>
+<a href="/en/about/">about</a>
+{{ end }}
+</nav>
+
 {{ block "main" . }}{{ end }}
-<hr>
-<p><small>{{ range .Translations }}<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>{{ end }}</small></p>
+
+<div class="footer">
+{{ range .Translations }}<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>{{ end }}
+</div>
 </body>
 </html>
 

@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ? - notarianni.org</title>
 <style>
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+}
+
+nav {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 12px;
+}
+
+ 
+main ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+}
+
+main ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ol li {
+    margin-bottom: 8px;
+}
+
+ 
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.posts-list li {
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
 }
 </style>
 </head>
 <body>
-<p><a href="/">Accueil</a> | <a href="/posts/">Posts</a> | <a href="/about/">À propos</a></p>
-<hr>
+<nav>
+
+<a href="/">accueil</a>
+<a href="/posts/">posts</a>
+<a href="/about/">à propos</a>
+
+</nav>
+
 
 <h1>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</h1>
-<p>En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA <strong>fonctionne</strong> — et même très bien.<br>
-L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.</p>
-<p>En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :<br>
-<strong>BMAD</strong>, <strong>Spec-Kit</strong>, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.</p>
+<p>En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA <strong>fonctionne</strong> — et même très bien. L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.</p>
+<p>En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :  <strong>BMAD</strong>, <strong>Spec-Kit</strong>, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.</p>
 <blockquote>
 <p><em>« Tu veux piloter le développement par les specs ? Tu devrais utiliser Spec-Kit. »</em></p>
 </blockquote>
 <p>Et pour la énième fois, on partage le lien vers un repo GitHub, comme si la réponse était déjà là.</p>
 <h2 id="le-réflexe-framework--un-héritage-du-logiciel-traditionnel">Le réflexe framework : un héritage du logiciel traditionnel</h2>
-<p>Ce réflexe n’a rien de surprenant.<br>
-Dans le monde du logiciel “classique”, le framework est une réponse rationnelle à un problème réel.</p>
+<p>Ce réflexe n’a rien de surprenant. Dans le monde du logiciel “classique”, le framework est une réponse rationnelle à un problème réel.</p>
 <p>Des outils comme <strong>Spring</strong>, <strong>Ruby on Rails</strong> ou <strong>React</strong> ont émergé pour mutualiser des abstractions coûteuses à concevoir, difficiles à maintenir, et critiques pour éviter de réinventer sans cesse des solutions fragiles.</p>
 <p>Leur promesse implicite était simple :</p>
 <blockquote>
 <p><em>inventer une roue est difficile, long et risqué — et vous avez de grandes chances de fabriquer une roue carrée.</em></p>
 </blockquote>
-<p>Dans la plupart des cas, cette promesse était tenue.<br>
-L’histoire du logiciel est jalonnée de tentatives “maison” qui ont confirmé une vérité simple : la critique est facile, l’art est difficile.</p>
+<p>Dans la plupart des cas, cette promesse était tenue. L’histoire du logiciel est jalonnée de tentatives “maison” qui ont confirmé une vérité simple : la critique est facile, l’art est difficile.</p>
 <h2 id="pourquoi-ce-raisonnement-se-brise-avec-lia">Pourquoi ce raisonnement se brise avec l’IA</h2>
-<p>L’erreur n’est pas dans le raisonnement…<br>
-elle est dans son <strong>application mécanique à une technologie qui change radicalement les règles du jeu</strong>.</p>
-<p>Avec l’IA, le coût de création — technique <strong>et cognitif</strong> — a chuté de façon spectaculaire.<br>
-Écrire un prompt, structurer un contexte, définir un workflow d’agent ou un MCP n’a plus rien à voir, en termes d’effort, avec la conception d’un framework logiciel traditionnel.</p>
+<p>L’erreur n’est pas dans le raisonnement… elle est dans son <strong>application mécanique à une technologie qui change radicalement les règles du jeu</strong>.</p>
+<p>Avec l’IA, le coût de création — technique <strong>et cognitif</strong> — a chuté de façon spectaculaire. Écrire un prompt, structurer un contexte, définir un workflow d’agent ou un MCP n’a plus rien à voir, en termes d’effort, avec la conception d’un framework logiciel traditionnel.</p>
 <p>Aujourd’hui, une personne seule peut, en quelques heures :</p>
 <ul>
 <li>concevoir un workflow IA cohérent,</li>
@@ -53,8 +146,7 @@ elle est dans son <strong>application mécanique à une technologie qui change r
 <li>et une complexité parfois inutile pour le problème à résoudre.</li>
 </ul>
 <h2 id="le-vrai-levier-nest-pas-le-framework-mais-le-workflow">Le vrai levier n’est pas le framework, mais le workflow</h2>
-<p>Les gains spectaculaires observés avec l’IA ne viennent pas principalement des outils.<br>
-Ils viennent de la <strong>qualité du raisonnement structuré autour de l’IA</strong>.</p>
+<p>Les gains spectaculaires observés avec l’IA ne viennent pas principalement des outils. Ils viennent de la <strong>qualité du raisonnement structuré autour de l’IA</strong>.</p>
 <p>En pratique, les facteurs réellement déterminants sont :</p>
 <ul>
 <li>la clarté des objectifs,</li>
@@ -101,18 +193,13 @@ Ils viennent de la <strong>qualité du raisonnement structuré autour de l’IA<
 <em>« Suis-je en train d’explorer, ou d’industrialiser ? »</em><br>
 <em>« Quelles contraintes suis-je prêt à accepter — et lesquelles puis-je éviter ? »</em></p>
 </blockquote>
-<p>Créer du logiciel n’a jamais été aussi facile.<br>
-Créer des workflows IA pertinents non plus.</p>
-<p>Les frameworks IA ne sont ni des solutions miracles, ni des erreurs à éviter absolument.<br>
-Ils sont des <strong>outils</strong>, utiles à un moment donné — mais incapables de penser à votre place.</p>
-<p>Et c’est peut-être là le changement le plus important apporté par l’IA : la responsabilité de la structure revient désormais pleinement aux humains.</p>
+<p>Créer du logiciel n’a jamais été aussi facile. Créer des workflows IA pertinents non plus. Les frameworks IA ne sont ni des solutions miracles, ni des erreurs à éviter absolument. Ils sont des <strong>outils</strong>, utiles à un moment donné — mais incapables de penser à votre place. Et c’est peut-être là le changement le plus important apporté par l’IA : la responsabilité de la structure revient désormais pleinement aux humains.</p>
 
 
-<p><small>Last modified: 2026-01-14</small></p>
 
-
-<hr>
-<p><small><a href="/en/posts/ai-frameworks/">English</a></small></p>
+<div class="footer">
+<a href="/en/posts/ai-frameworks/">English</a>
+</div>
 </body>
 </html>
 

@@ -2,14 +2,11 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 {{ if .Pages }}
-<ul>
+<ul class="posts-list">
 {{ range .Pages }}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Date }} - {{ .Date.Format "2006-01-02" }}{{ end }}</li>
+<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
-{{ end }}
-{{ if .Lastmod }}
-<p><small>Last modified: {{ .Lastmod.Format "2006-01-02" }}</small></p>
 {{ end }}
 {{ end }}
 

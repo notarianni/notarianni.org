@@ -1,7 +1,14 @@
 ---
-title: "Accueil"
+title: "Bernard Notarianni"
 ---
 
-Un blog sur la création de logiciels.
+<div class="intro">
 
-[Posts](/posts/) | [À propos](/about/)
+Bonjour, je suis Bernard Notarianni. Je suis un créateur de logiciels intéressé par l'eXtreme Programming et la conception logicielle.
+
+</div>
+
+## Écrits
+
+- [Posts](/posts/)
+- [À propos](/about/)

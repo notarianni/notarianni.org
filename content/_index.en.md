@@ -1,8 +1,15 @@
 ---
-title: "Home"
+title: "Bernard Notarianni"
 ---
 
-A blog about software creation.
+<div class="intro">
 
-[Posts](/en/posts/) | [About](/en/about/)
+Hi, I'm Bernard Notarianni. I'm a software creator interested in eXtreme Programming and software design.
+
+</div>
+
+## Writing
+
+- [Posts](/en/posts/)
+- [About](/en/about/)
 

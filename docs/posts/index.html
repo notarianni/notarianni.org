@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Posts - notarianni.org</title>
 <style>
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+}
+
+nav {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 12px;
+}
+
+ 
+main ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+}
+
+main ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+main ol li {
+    margin-bottom: 8px;
+}
+
+ 
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.posts-list li {
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
 }
 </style>
 </head>
 <body>
-<p><a href="/">Accueil</a> | <a href="/posts/">Posts</a> | <a href="/about/">À propos</a></p>
-<hr>
+<nav>
+
+<a href="/">accueil</a>
+<a href="/posts/">posts</a>
+<a href="/about/">à propos</a>
+
+</nav>
+
 
 <h1>Posts</h1>
 <p>Liste des articles en français.</p>
 
 
-<ul>
+<ul class="posts-list">
 
-<li><a href="/posts/ai-frameworks/">Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</a> - 2026-01-14</li>
+<li><a href="/posts/ai-frameworks/">Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</a></li>
 
-<li><a href="/posts/kata-apb/">Kata APB</a> - 2017-11-18</li>
+<li><a href="/posts/kata-apb/">Kata APB</a></li>
 
 </ul>
 
 
-<p><small>Last modified: 2026-01-14</small></p>
 
-
-<hr>
-<p><small><a href="/en/posts/">English</a></small></p>
+<div class="footer">
+<a href="/en/posts/">English</a>
+</div>
 </body>
 </html>
 

@@ -3,11 +3,9 @@ title: "Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?"
 date: '2026-01-14'
 ---
 
-En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA **fonctionne** — et même très bien.  
-L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.
+En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA **fonctionne** — et même très bien. L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.
 
-En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :  
-**BMAD**, **Spec-Kit**, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.
+En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :  **BMAD**, **Spec-Kit**, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.
 
 > *« Tu veux piloter le développement par les specs ? Tu devrais utiliser Spec-Kit. »*
 
@@ -15,24 +13,20 @@ Et pour la énième fois, on partage le lien vers un repo GitHub, comme si la r�
 
 ## Le réflexe framework : un héritage du logiciel traditionnel
 
-Ce réflexe n’a rien de surprenant.  
-Dans le monde du logiciel “classique”, le framework est une réponse rationnelle à un problème réel.
+Ce réflexe n’a rien de surprenant. Dans le monde du logiciel “classique”, le framework est une réponse rationnelle à un problème réel.
 
 Des outils comme **Spring**, **Ruby on Rails** ou **React** ont émergé pour mutualiser des abstractions coûteuses à concevoir, difficiles à maintenir, et critiques pour éviter de réinventer sans cesse des solutions fragiles.
 
 Leur promesse implicite était simple :  
 > *inventer une roue est difficile, long et risqué — et vous avez de grandes chances de fabriquer une roue carrée.*
 
-Dans la plupart des cas, cette promesse était tenue.  
-L’histoire du logiciel est jalonnée de tentatives “maison” qui ont confirmé une vérité simple : la critique est facile, l’art est difficile.
+Dans la plupart des cas, cette promesse était tenue. L’histoire du logiciel est jalonnée de tentatives “maison” qui ont confirmé une vérité simple : la critique est facile, l’art est difficile.
 
 ## Pourquoi ce raisonnement se brise avec l’IA
 
-L’erreur n’est pas dans le raisonnement…  
-elle est dans son **application mécanique à une technologie qui change radicalement les règles du jeu**.
+L’erreur n’est pas dans le raisonnement… elle est dans son **application mécanique à une technologie qui change radicalement les règles du jeu**.
 
-Avec l’IA, le coût de création — technique **et cognitif** — a chuté de façon spectaculaire.  
-Écrire un prompt, structurer un contexte, définir un workflow d’agent ou un MCP n’a plus rien à voir, en termes d’effort, avec la conception d’un framework logiciel traditionnel.
+Avec l’IA, le coût de création — technique **et cognitif** — a chuté de façon spectaculaire. Écrire un prompt, structurer un contexte, définir un workflow d’agent ou un MCP n’a plus rien à voir, en termes d’effort, avec la conception d’un framework logiciel traditionnel.
 
 Aujourd’hui, une personne seule peut, en quelques heures :
 - concevoir un workflow IA cohérent,
@@ -47,8 +41,7 @@ Dans ce contexte, adopter un framework existant revient aussi à importer :
 
 ## Le vrai levier n’est pas le framework, mais le workflow
 
-Les gains spectaculaires observés avec l’IA ne viennent pas principalement des outils.  
-Ils viennent de la **qualité du raisonnement structuré autour de l’IA**.
+Les gains spectaculaires observés avec l’IA ne viennent pas principalement des outils. Ils viennent de la **qualité du raisonnement structuré autour de l’IA**.
 
 En pratique, les facteurs réellement déterminants sont :
 - la clarté des objectifs,
@@ -100,10 +93,4 @@ Mais plutôt :
 > *« Suis-je en train d’explorer, ou d’industrialiser ? »*  
 > *« Quelles contraintes suis-je prêt à accepter — et lesquelles puis-je éviter ? »*
 
-Créer du logiciel n’a jamais été aussi facile.  
-Créer des workflows IA pertinents non plus.
-
-Les frameworks IA ne sont ni des solutions miracles, ni des erreurs à éviter absolument.  
-Ils sont des **outils**, utiles à un moment donné — mais incapables de penser à votre place.
-
-Et c’est peut-être là le changement le plus important apporté par l’IA : la responsabilité de la structure revient désormais pleinement aux humains.
+Créer du logiciel n’a jamais été aussi facile. Créer des workflows IA pertinents non plus. Les frameworks IA ne sont ni des solutions miracles, ni des erreurs à éviter absolument. Ils sont des **outils**, utiles à un moment donné — mais incapables de penser à votre place. Et c’est peut-être là le changement le plus important apporté par l’IA : la responsabilité de la structure revient désormais pleinement aux humains.
