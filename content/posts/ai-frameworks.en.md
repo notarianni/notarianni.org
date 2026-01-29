@@ -3,36 +3,22 @@ title: "Should You Use BMAD, Spec-Kit, and Other AI Frameworks?"
 date: '2026-01-14'
 ---
 
-At the beginning of 2026, it's now clear to many that AI **works** — and works very well.  
-Experimentation is everywhere: everyone is testing, exploring, adjusting, in a continuous flourishing of ideas, workflows, and practices.
+At the beginning of 2026, it's now clear to many that AI **works** — and works very well. Experimentation is everywhere: everyone is testing, exploring, adjusting, in a continuous flourishing of ideas, workflows, and practices.
 
-When exchanging feedback with my peers, the same refrain regularly comes up:  
-**BMAD**, **Spec-Kit**, or other "turnkey" frameworks supposedly designed to effectively structure work with AI.
+When exchanging feedback with my peers, the same refrain regularly comes up: **BMAD**, **Spec-Kit**, or other "turnkey" frameworks supposedly designed to effectively structure work with AI.
 
 > *"You want to drive development through specs? You should use Spec-Kit."*
 
 And for the umpteenth time, we share a link to a GitHub repo, as if the answer were already there.
 
-## The Framework Reflex: A Legacy from Traditional Software
+This reflex is not surprising. In the world of "traditional" software, the framework is a rational response to a real problem. Tools like **Spring**, **Ruby on Rails**, or **React** emerged to pool costly abstractions to design, difficult to maintain, and critical to avoid constantly reinventing fragile solutions.
 
-This reflex is not surprising.  
-In the world of "traditional" software, the framework is a rational response to a real problem.
-
-Tools like **Spring**, **Ruby on Rails**, or **React** emerged to pool costly abstractions to design, difficult to maintain, and critical to avoid constantly reinventing fragile solutions.
-
-Their implicit promise was simple:  
+Their implicit promise was simple:
 > *inventing a wheel is difficult, time-consuming, and risky — and you're likely to build a square wheel.*
 
-In most cases, this promise was kept.  
-Software history is marked by "homegrown" attempts that confirmed a simple truth: criticism is easy, art is difficult.
+In most cases, this promise was kept. Software history is marked by "homegrown" attempts that confirmed a simple truth: criticism is easy, art is difficult. The error is not in the reasoning… it's in its **mechanical application to a technology that radically changes the rules of the game**.
 
-## Why This Reasoning Breaks Down with AI
-
-The error is not in the reasoning…  
-it's in its **mechanical application to a technology that radically changes the rules of the game**.
-
-With AI, the cost of creation — both technical **and cognitive** — has dropped dramatically.  
-Writing a prompt, structuring a context, defining an agent workflow or an MCP no longer has anything to do, in terms of effort, with designing a traditional software framework.
+With AI, the cost of creation — both technical **and cognitive** — has dropped dramatically. Writing a prompt, structuring a context, defining an agent workflow or an MCP no longer has anything to do, in terms of effort, with designing a traditional software framework.
 
 Today, a single person can, in a few hours:
 - design a coherent AI workflow,
@@ -45,10 +31,7 @@ In this context, adopting an existing framework also means importing:
 - inherited conventions,
 - and sometimes unnecessary complexity for the problem to solve.
 
-## The Real Leverage Is Not the Framework, but the Workflow
-
-The spectacular gains observed with AI don't primarily come from tools.  
-They come from the **quality of structured reasoning around AI**.
+The spectacular gains observed with AI don't primarily come from tools. They come from the **quality of structured reasoning around AI**.
 
 In practice, the truly determining factors are:
 - clarity of objectives,
@@ -56,55 +39,15 @@ In practice, the truly determining factors are:
 - input and output conventions,
 - ability to iterate quickly with real feedback.
 
-No framework can decide this for you.
-
-The best results observed in the field often come from simple, explicit workflows, sometimes even "cobbled together" — but perfectly aligned with the problem being addressed.
-
-## Where AI Frameworks Remain Useful
-
-Rejecting frameworks wholesale would be a symmetrical error.
-
-AI frameworks provide real value when:
-- work is done **with multiple people**,
-- the focus is on **industrialization** rather than exploration,
-- standardization, observability, or reproducibility become critical,
-- transmission and collective memory take precedence over individual optimization.
-
-In other words:
-- in the exploration phase, the framework is often a hindrance,
-- in the stabilization phase, it can become an accelerator.
-
-The problem is therefore not the existence of AI frameworks, but their **premature adoption**, often guided by hype rather than real need.
-
-## The Trap of Unacknowledged "Homegrown" Solutions
-
-Conversely, creating your own AI framework is not free either.
-
-Without explicit discipline:
-- prompts drift,
-- conventions become implicit,
-- the reasons for choices are lost,
-- and what worked "by magic" suddenly stops working.
-
-A framework — even an imperfect one — sometimes forces one essential thing: **making decisions visible and transmissible**.
-
-This is a cost that should not be ignored.
-
-## Conclusion: Reversing the Question
+No framework can decide this for you. The best results observed in the field often come from simple, explicit workflows, sometimes even "cobbled together" — but perfectly aligned with the problem being addressed.
 
 The real question is not:
 > *"Which AI framework should I use?"*
 
 But rather:
-> *"What do I really need today?"*  
-> *"Am I exploring, or industrializing?"*  
+> *"What do I really need today?"*
+> *"Am I exploring, or industrializing?"*
 > *"What constraints am I willing to accept — and which ones can I avoid?"*
 
-Creating software has never been easier.  
-Creating relevant AI workflows hasn't either.
-
-AI frameworks are neither miracle solutions nor mistakes to be avoided at all costs.  
-They are **tools**, useful at a given moment — but incapable of thinking for you.
-
-And perhaps that's the most important change brought by AI: the responsibility for structure now fully returns to humans.
+Creating software has never been easier. Creating relevant AI workflows hasn't either. AI frameworks are neither miracle solutions nor mistakes to be avoided at all costs. They are **tools**, useful at a given moment — but incapable of thinking for you.
 
