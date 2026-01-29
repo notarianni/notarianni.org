@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on notarianni.org</title>
-    <link>http://localhost:1313/en/posts/</link>
+    <link>https://notarianni.org/en/posts/</link>
     <description>Recent content in Posts on notarianni.org</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://notarianni.org/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Should You Use BMAD, Spec-Kit, and Other AI Frameworks?</title>
-      <link>http://localhost:1313/en/posts/ai-frameworks/</link>
+      <link>https://notarianni.org/en/posts/ai-frameworks/</link>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/ai-frameworks/</guid>
+      <guid>https://notarianni.org/en/posts/ai-frameworks/</guid>
       <description>&lt;p&gt;At the beginning of 2026, it&amp;rsquo;s now clear to many that AI &lt;strong&gt;works&lt;/strong&gt; — and works very well.&lt;br&gt;&#xA;Experimentation is everywhere: everyone is testing, exploring, adjusting, in a continuous flourishing of ideas, workflows, and practices.&lt;/p&gt;&#xA;&lt;p&gt;When exchanging feedback with my peers, the same refrain regularly comes up:&lt;br&gt;&#xA;&lt;strong&gt;BMAD&lt;/strong&gt;, &lt;strong&gt;Spec-Kit&lt;/strong&gt;, or other &amp;ldquo;turnkey&amp;rdquo; frameworks supposedly designed to effectively structure work with AI.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;You want to drive development through specs? You should use Spec-Kit.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kata APB</title>
-      <link>http://localhost:1313/en/posts/kata-apb/</link>
+      <link>https://notarianni.org/en/posts/kata-apb/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/kata-apb/</guid>
+      <guid>https://notarianni.org/en/posts/kata-apb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.admission-postbac.fr/&#34;&gt;Admission Post Bac&lt;/a&gt; (APB) is the official application of the French Ministry of National Education allowing high school students to obtain enrollment in a post-secondary school or university.&lt;/p&gt;&#xA;&lt;p&gt;The objective of this kata is to design and implement &lt;em&gt;your&lt;/em&gt; version of this application. You are free to choose your algorithm and constraints. You can be inspired by the existing application or invent your own approach.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-description&#34;&gt;Problem Description&lt;/h2&gt;&#xA;&lt;p&gt;Build a program that determines the assignments of a list of students according to a list of available courses.&lt;/p&gt;</description>
     </item>
   </channel>

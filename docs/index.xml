@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accueil on notarianni.org</title>
-    <link>http://localhost:1313/</link>
+    <link>https://notarianni.org/</link>
     <description>Recent content in Accueil on notarianni.org</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://notarianni.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</title>
-      <link>http://localhost:1313/posts/ai-frameworks/</link>
+      <link>https://notarianni.org/posts/ai-frameworks/</link>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-frameworks/</guid>
+      <guid>https://notarianni.org/posts/ai-frameworks/</guid>
       <description>&lt;p&gt;En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA &lt;strong&gt;fonctionne&lt;/strong&gt; — et même très bien.&lt;br&gt;&#xA;L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.&lt;/p&gt;&#xA;&lt;p&gt;En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :&lt;br&gt;&#xA;&lt;strong&gt;BMAD&lt;/strong&gt;, &lt;strong&gt;Spec-Kit&lt;/strong&gt;, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;« Tu veux piloter le développement par les specs ? Tu devrais utiliser Spec-Kit. »&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kata APB</title>
-      <link>http://localhost:1313/posts/kata-apb/</link>
+      <link>https://notarianni.org/posts/kata-apb/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kata-apb/</guid>
+      <guid>https://notarianni.org/posts/kata-apb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.admission-postbac.fr/&#34;&gt;Admission Post Bac&lt;/a&gt; (APB) est&#xA;l&amp;rsquo;application officielle du Ministère de l&amp;rsquo;Education Nationale permettant aux&#xA;lycéens d&amp;rsquo;obtenir l&amp;rsquo;inscription dans une école ou université post-&#xA;bac.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;objectif de ce kata est de concevoir et implémenter &lt;em&gt;votre&lt;/em&gt; version de cette&#xA;application. Vous êtes libre de choisir votre algorithme et vos contraintes.&#xA;Vous pouvez vous inspirer de l&amp;rsquo;application existante ou bien inventer votre&#xA;propre approche.&lt;/p&gt;&#xA;&lt;h2 id=&#34;description-du-problème&#34;&gt;Description du problème&lt;/h2&gt;&#xA;&lt;p&gt;Constuisez un programme qui permette de déterminer les affectations d&amp;rsquo;une liste&#xA;d&amp;rsquo;étudiants selon une liste de formations disponibles.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/bio/</link>
+      <link>https://notarianni.org/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bio/</guid>
+      <guid>https://notarianni.org/bio/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Bernard Notarianni&lt;/strong&gt; est créateur de logiciels depuis 1993.&lt;/p&gt;&#xA;&lt;p&gt;Il a participé à l&amp;rsquo;installation du mouvement agile en France&#xA;au sein de l&amp;rsquo;association XP-France, devenue ensuite Agile France.&lt;/p&gt;&#xA;&lt;p&gt;Il est cofondateur de la Société Coopérative Aleryo.&lt;/p&gt;&#xA;&lt;p&gt;Ses centres d&amp;rsquo;intérêts sont l&amp;rsquo;Artisanat Logiciel et la Démocratie.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/notarianni&#34;&gt;https://twitter.com/notarianni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>À propos</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://notarianni.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://notarianni.org/about/</guid>
       <description>&lt;p&gt;Je suis un créateur de logiciels intéressé par l&amp;rsquo;eXtreme Programming et la conception logicielle.&lt;/p&gt;&#xA;&lt;p&gt;Les opinions exprimées sont les miennes et ne reflètent pas celles de mon employeur.&lt;/p&gt;&#xA;&lt;p&gt;Mes articles sont les miens. Mes opinions sont les miennes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
