@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ? - notarianni.org</title>
+<title>Agents pipeline - notarianni.org</title>
 <style>
 body {
     font-family: Georgia, serif;
@@ -185,61 +185,151 @@ pre code {
 </nav>
 
 
-<h1>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</h1>
+<h1>Agents pipeline</h1>
 
 
+<div style="margin-bottom: 30px; font-size: 14px; color: #666;">
+    
 
-<p>En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA <strong>fonctionne</strong> — et même très bien. L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.</p>
-<p>En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :  <strong>BMAD</strong>, <strong>Spec-Kit</strong>, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.</p>
-<blockquote>
-<p><em>« Tu veux piloter le développement par les specs ? Tu devrais utiliser Spec-Kit. »</em></p>
-</blockquote>
-<p>Et pour la énième fois, on partage le lien vers un repo GitHub, comme si la réponse était déjà là.</p>
-<p>Ce réflexe n’a rien de surprenant. Dans le monde du logiciel “classique”, le framework est une réponse rationnelle à un problème réel. Des outils comme <strong>Spring</strong>, <strong>Ruby on Rails</strong> ou <strong>React</strong> ont émergé pour mutualiser des abstractions coûteuses à concevoir, difficiles à maintenir, et critiques pour éviter de réinventer sans cesse des solutions fragiles.</p>
-<p>Leur promesse implicite était simple :</p>
-<blockquote>
-<p><em>inventer une roue est difficile, long et risqué — et vous avez de grandes chances de fabriquer une roue carrée.</em></p>
-</blockquote>
-<p>Dans la plupart des cas, cette promesse était tenue. L’histoire du logiciel est jalonnée de tentatives “maison” qui ont confirmé une vérité simple : la critique est facile, l’art est difficile. L’erreur n’est pas dans le raisonnement… elle est dans son <strong>application mécanique à une technologie qui change radicalement les règles du jeu</strong>.</p>
-<p>Avec l’IA, le coût de création — technique <strong>et cognitif</strong> — a chuté de façon spectaculaire. Écrire un prompt, structurer un contexte, définir un workflow d’agent ou un MCP n’a plus rien à voir, en termes d’effort, avec la conception d’un framework logiciel traditionnel.</p>
-<p>Aujourd’hui, une personne seule peut, en quelques heures :</p>
-<ul>
-<li>concevoir un workflow IA cohérent,</li>
-<li>itérer rapidement,</li>
-<li>l’adapter précisément à son problème réel,</li>
-<li>et obtenir de meilleurs résultats qu’avec une solution générique.</li>
-</ul>
-<p>Dans ce contexte, adopter un framework existant revient aussi à importer :</p>
-<ul>
-<li>des abstractions implicites,</li>
-<li>des conventions héritées,</li>
-<li>et une complexité parfois inutile pour le problème à résoudre.</li>
-</ul>
-<p>Les gains spectaculaires observés avec l’IA ne viennent pas principalement des outils. Ils viennent de la <strong>qualité du raisonnement structuré autour de l’IA</strong>.</p>
-<p>En pratique, les facteurs réellement déterminants sont :</p>
-<ul>
-<li>la clarté des objectifs,</li>
-<li>la qualité et la stabilité du contexte,</li>
-<li>les conventions d’entrée et de sortie,</li>
-<li>la capacité à itérer rapidement avec du feedback réel.</li>
-</ul>
-<p>Aucun framework ne peut décider cela à votre place. Les meilleurs résultats observés sur le terrain proviennent souvent de workflows simples, explicites, parfois même “bricolés” — mais parfaitement alignés avec le problème traité.</p>
-<p>La vraie question n’est pas :</p>
-<blockquote>
-<p><em>« Quel framework IA dois-je utiliser ? »</em></p>
-</blockquote>
-<p>Mais plutôt :</p>
-<blockquote>
-<p><em>« De quoi ai-je réellement besoin aujourd’hui ? »</em><br>
-<em>« Suis-je en train d’explorer, ou d’industrialiser ? »</em><br>
-<em>« Quelles contraintes suis-je prêt à accepter — et lesquelles puis-je éviter ? »</em></p>
-</blockquote>
-<p>Créer du logiciel n’a jamais été aussi facile. Créer des workflows IA pertinents non plus. Les frameworks IA ne sont ni des solutions miracles, ni des erreurs à éviter absolument. Ils sont des <strong>outils</strong>, utiles à un moment donné — mais incapables de penser à votre place.</p>
+    
+    <span>
+        tags:
+        
+            
+            <a href="/tags/prompt/" style="color: #0066cc;">prompt</a>
+        
+    </span>
+    
+</div>
+
+
+<p>Un prompt pour concevoir votre propre pipeline d’agents.</p>
+<pre tabindex="0"><code># Le problème
+
+Je veux concevoir un pipeline permettant d’alimenter et d’orchestrer un ensemble d’agents.
+
+Deux sujets principaux sont à designer :
+1. **Qu’est-ce qu’un agent de code ?**
+2. **Comment construire un contexte (prompt), le soumettre à l’agent et vérifier le résultat**
+
+L’objectif global est de garder un pipeline **simple**, **observable**, et **itérable**.
+
+# Qu’est-ce qu’un agent de code ?
+
+Un agent de code travaille sur les repositories de mon équipe :
+* repo A
+* repo B
+* repo C
+* repo D
+
+Caractéristiques :
+
+* Il s’exécute **en local** sur la machine.
+* Il opère via une **loop Ralph Wiggum**, avec un prompt bien défini.
+  https://awesomeclaude.ai/ralph-wiggum
+* Il est autonome sur son périmètre, mais doit rester **audit-able**
+ et **reproductible**.
+
+## Questions ouvertes
+
+### Organisation des repositories
+
+* Dans quels répertoires placer les repos ?
+* Idéalement, **chaque agent dispose de ses propres copies Git** des 4 repos.
+* L’agent doit pouvoir :
+
+  * créer des branches,
+  * modifier du code,
+  * faire des commits,
+    sans interférer avec les autres agents ou l’environnement de travail humain.
+
+### Soumission du contexte à l’agent
+
+* Comment fournir le contexte à l’agent ?
+* Probablement via **un ensemble de fichiers**.
+* Où les déposer ?
+* Comment distinguer clairement :
+
+  * le code source,
+  * le contexte fourni à l’agent,
+  * les artefacts produits par l’agent ?
+
+
+### Fichiers de travail temporaires
+* Lorsqu’un agent a besoin de créer des fichiers intermédiaires :
+  * où doivent-ils vivre ?
+* Contraintes :
+  * ne pas polluer les repos Git,
+  * ne pas mélanger avec le contexte,
+  * être clairement rattachés à **une exécution précise**.
+
+### Restitution
+
+* À la fin de son exécution, l’agent doit être capable de produire :
+  * un **rapport synthétique** de ce qu’il a fait,
+  * les décisions prises,
+  * les changements effectués,
+  * les points bloquants éventuels.
+
+# Construire un contexte, le soumettre, et vérifier le résultat
+
+À chaque fois qu’un agent est sollicité, on lui soumet un **prompt**.
+Ce prompt est construit à partir d’un **contexte**.
+Ce contexte lui-même est composé d’un **ensemble de fichiers**.
+
+La question clé devient donc : Comment organiser ces fichiers de contexte ?
+
+## Vers une unité de travail explicite
+
+Chaque *prompt / contexte / tâche* (le nom reste à définir)
+pourrait être matérialisé par :
+
+* **un répertoire dédié**, fourni à l’agent au lancement,
+* contenant :
+  * les fichiers de contexte,
+  * éventuellement des règles ou contraintes,
+  * et servant de point d’entrée unique.
+
+À la fin de l’exécution :
+
+* l’agent écrit ses résultats **dans ce même répertoire** :
+  * rapport,
+  * logs,
+  * décisions,
+  * liens vers commits ou branches créées.
+
+## Organisation globale
+
+* Tous ces répertoires de tâches seraient stockés **au même endroit**.
+* Objectifs :
+  * gestion centralisée,
+  * simplicité du pipeline,
+  * visibilité sur l’ensemble du travail des agents.
+
+## Review et amélioration continue
+
+On veut pouvoir :
+
+* relire et reviewer ces **contextes / prompts / tâches**,
+* comprendre ce qui a bien fonctionné ou non,
+* identifier :
+  * ce qui est prêt à être mergé,
+  * ce qui nécessite des ajustements,
+  * ce qui peut être réutilisé comme “pattern”.
+
+L’enjeu n’est pas seulement l’exécution, mais la **capitalisation** :
+améliorer continuellement la qualité des contextes et, par extension,
+celle des résultats produits par les agents.
+</code></pre><p>J’ai lancé ce prompt cette semaine pour me créer mon propre pipeline d’agents.
+J’ai désormais un pipeline complet qui tourne en local sur ma machine, avec des agents en boucle façon <em>« Ralph Wiggum »</em>.</p>
+<p>Mon objectif est de prendre le contrôle total de mon workflow IA, afin de pouvoir itérer, améliorer et optimiser finement la création des prompts et surtout des contextes.</p>
+<p>Le code n’est plus le cœur de mon activité.
+Aujourd’hui, mon focus s’est déplacé vers la conception des contextes : ce sont eux qui déterminent réellement la qualité, la pertinence et l’impact des résultats produits par l’IA.</p>
 
 
 
 <div class="footer">
-<a href="/en/posts/ai-frameworks/">English</a>
+<a href="/en/posts/agent-pipeline/">English</a>
 </div>
 
 <script>

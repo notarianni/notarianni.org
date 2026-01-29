@@ -2,6 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 
+{{ if .Pages }}
 <ul class="posts-list">
 {{ range .Pages }}
 <li>
@@ -10,5 +11,6 @@
 </li>
 {{ end }}
 </ul>
+{{ end }}
 {{ end }}
 

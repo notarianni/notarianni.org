@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bernard Notarianni on notarianni.org</title>
-    <link>https://notarianni.org/</link>
-    <description>Recent content in Bernard Notarianni on notarianni.org</description>
+    <title>Prompt on notarianni.org</title>
+    <link>https://notarianni.org/tags/prompt/</link>
+    <description>Recent content in Prompt on notarianni.org</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://notarianni.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://notarianni.org/tags/prompt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agents pipeline</title>
       <link>https://notarianni.org/posts/agent-pipeline/</link>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://notarianni.org/posts/agent-pipeline/</guid>
       <description>&lt;p&gt;Un prompt pour concevoir votre propre pipeline d’agents.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Le problème&#xA;&#xA;Je veux concevoir un pipeline permettant d’alimenter et d’orchestrer un ensemble d’agents.&#xA;&#xA;Deux sujets principaux sont à designer :&#xA;1. **Qu’est-ce qu’un agent de code ?**&#xA;2. **Comment construire un contexte (prompt), le soumettre à l’agent et vérifier le résultat**&#xA;&#xA;L’objectif global est de garder un pipeline **simple**, **observable**, et **itérable**.&#xA;&#xA;# Qu’est-ce qu’un agent de code ?&#xA;&#xA;Un agent de code travaille sur les repositories de mon équipe :&#xA;* repo A&#xA;* repo B&#xA;* repo C&#xA;* repo D&#xA;&#xA;Caractéristiques :&#xA;&#xA;* Il s’exécute **en local** sur la machine.&#xA;* Il opère via une **loop Ralph Wiggum**, avec un prompt bien défini.&#xA;  https://awesomeclaude.ai/ralph-wiggum&#xA;* Il est autonome sur son périmètre, mais doit rester **audit-able**&#xA; et **reproductible**.&#xA;&#xA;## Questions ouvertes&#xA;&#xA;### Organisation des repositories&#xA;&#xA;* Dans quels répertoires placer les repos ?&#xA;* Idéalement, **chaque agent dispose de ses propres copies Git** des 4 repos.&#xA;* L’agent doit pouvoir :&#xA;&#xA;  * créer des branches,&#xA;  * modifier du code,&#xA;  * faire des commits,&#xA;    sans interférer avec les autres agents ou l’environnement de travail humain.&#xA;&#xA;### Soumission du contexte à l’agent&#xA;&#xA;* Comment fournir le contexte à l’agent ?&#xA;* Probablement via **un ensemble de fichiers**.&#xA;* Où les déposer ?&#xA;* Comment distinguer clairement :&#xA;&#xA;  * le code source,&#xA;  * le contexte fourni à l’agent,&#xA;  * les artefacts produits par l’agent ?&#xA;&#xA;&#xA;### Fichiers de travail temporaires&#xA;* Lorsqu’un agent a besoin de créer des fichiers intermédiaires :&#xA;  * où doivent-ils vivre ?&#xA;* Contraintes :&#xA;  * ne pas polluer les repos Git,&#xA;  * ne pas mélanger avec le contexte,&#xA;  * être clairement rattachés à **une exécution précise**.&#xA;&#xA;### Restitution&#xA;&#xA;* À la fin de son exécution, l’agent doit être capable de produire :&#xA;  * un **rapport synthétique** de ce qu’il a fait,&#xA;  * les décisions prises,&#xA;  * les changements effectués,&#xA;  * les points bloquants éventuels.&#xA;&#xA;# Construire un contexte, le soumettre, et vérifier le résultat&#xA;&#xA;À chaque fois qu’un agent est sollicité, on lui soumet un **prompt**.&#xA;Ce prompt est construit à partir d’un **contexte**.&#xA;Ce contexte lui-même est composé d’un **ensemble de fichiers**.&#xA;&#xA;La question clé devient donc : Comment organiser ces fichiers de contexte ?&#xA;&#xA;## Vers une unité de travail explicite&#xA;&#xA;Chaque *prompt / contexte / tâche* (le nom reste à définir)&#xA;pourrait être matérialisé par :&#xA;&#xA;* **un répertoire dédié**, fourni à l’agent au lancement,&#xA;* contenant :&#xA;  * les fichiers de contexte,&#xA;  * éventuellement des règles ou contraintes,&#xA;  * et servant de point d’entrée unique.&#xA;&#xA;À la fin de l’exécution :&#xA;&#xA;* l’agent écrit ses résultats **dans ce même répertoire** :&#xA;  * rapport,&#xA;  * logs,&#xA;  * décisions,&#xA;  * liens vers commits ou branches créées.&#xA;&#xA;## Organisation globale&#xA;&#xA;* Tous ces répertoires de tâches seraient stockés **au même endroit**.&#xA;* Objectifs :&#xA;  * gestion centralisée,&#xA;  * simplicité du pipeline,&#xA;  * visibilité sur l’ensemble du travail des agents.&#xA;&#xA;## Review et amélioration continue&#xA;&#xA;On veut pouvoir :&#xA;&#xA;* relire et reviewer ces **contextes / prompts / tâches**,&#xA;* comprendre ce qui a bien fonctionné ou non,&#xA;* identifier :&#xA;  * ce qui est prêt à être mergé,&#xA;  * ce qui nécessite des ajustements,&#xA;  * ce qui peut être réutilisé comme “pattern”.&#xA;&#xA;L’enjeu n’est pas seulement l’exécution, mais la **capitalisation** :&#xA;améliorer continuellement la qualité des contextes et, par extension,&#xA;celle des résultats produits par les agents.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;J’ai lancé ce prompt cette semaine pour me créer mon propre pipeline d’agents.&#xA;J’ai désormais un pipeline complet qui tourne en local sur ma machine, avec des agents en boucle façon &lt;em&gt;« Ralph Wiggum »&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Faut-il utiliser BMAD, Spec-Kit et les autres frameworks IA ?</title>
-      <link>https://notarianni.org/posts/ai-frameworks/</link>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://notarianni.org/posts/ai-frameworks/</guid>
-      <description>&lt;p&gt;En ce début d’année 2026, il est désormais clair pour beaucoup que l’IA &lt;strong&gt;fonctionne&lt;/strong&gt; — et même très bien. L’expérimentation est partout : chacun teste, explore, ajuste, dans un foisonnement continu d’idées, de workflows et de pratiques.&lt;/p&gt;&#xA;&lt;p&gt;En échangeant des retours d’expérience avec mes pairs, un même refrain revient régulièrement :  &lt;strong&gt;BMAD&lt;/strong&gt;, &lt;strong&gt;Spec-Kit&lt;/strong&gt;, ou d’autres frameworks “clé en main” censés structurer efficacement le travail avec l’IA.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;« Tu veux piloter le développement par les specs ? Tu devrais utiliser Spec-Kit. »&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://notarianni.org/bio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://notarianni.org/bio/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Bernard Notarianni&lt;/strong&gt; est créateur de logiciels depuis 1993.&lt;/p&gt;&#xA;&lt;p&gt;Il a participé à l&amp;rsquo;installation du mouvement agile en France&#xA;au sein de l&amp;rsquo;association XP-France, devenue ensuite Agile France.&lt;/p&gt;&#xA;&lt;p&gt;Il est cofondateur de la Société Coopérative Aleryo.&lt;/p&gt;&#xA;&lt;p&gt;Ses centres d&amp;rsquo;intérêts sont l&amp;rsquo;Artisanat Logiciel et la Démocratie.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/notarianni&#34;&gt;https://twitter.com/notarianni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>À propos</title>
-      <link>https://notarianni.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://notarianni.org/about/</guid>
-      <description>&lt;p&gt;Je suis un créateur de logiciels intéressé par l&amp;rsquo;eXtreme Programming et la conception logicielle.&lt;/p&gt;&#xA;&lt;p&gt;Les opinions exprimées sont les miennes et ne reflètent pas celles de mon employeur.&lt;/p&gt;&#xA;&lt;p&gt;Mes articles sont les miens. Mes opinions sont les miennes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
