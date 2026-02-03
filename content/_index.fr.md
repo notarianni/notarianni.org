@@ -9,6 +9,3 @@ Bonjour, je suis Bernard Notarianni. Je suis un créateur de logiciels intéress
 </div>
 
 ## Écrits
-
-- [Posts](/posts/)
-- [À propos](/about/)

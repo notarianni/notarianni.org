@@ -10,6 +10,3 @@ Hi, I'm Bernard Notarianni. I'm a software creator interested in eXtreme Program
 
 ## Writing
 
-- [Posts](/en/posts/)
-- [About](/en/about/)
-

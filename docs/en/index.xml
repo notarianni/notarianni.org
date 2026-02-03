@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bernard Notarianni on notarianni.org</title>
-    <link>http://localhost:1313/en/</link>
+    <link>https://notarianni.org/en/</link>
     <description>Recent content in Bernard Notarianni on notarianni.org</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://notarianni.org/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Context management</title>
-      <link>http://localhost:1313/en/posts/context-management/</link>
+      <link>https://notarianni.org/en/posts/context-management/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/context-management/</guid>
+      <guid>https://notarianni.org/en/posts/context-management/</guid>
       <description>&lt;p&gt;If your project only exists in your head,&#xA;your agents are blind.&lt;/p&gt;&#xA;&lt;p&gt;An agent doesn&amp;rsquo;t guess:&#xA;it only knows what you &lt;strong&gt;write&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So write. Everything. Simply.&lt;/p&gt;&#xA;&lt;p&gt;In Markdown files.&lt;/p&gt;&#xA;&lt;p&gt;Note throughout the day:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What you&amp;rsquo;re doing&lt;/li&gt;&#xA;&lt;li&gt;Why you&amp;rsquo;re doing it&lt;/li&gt;&#xA;&lt;li&gt;Problems encountered&lt;/li&gt;&#xA;&lt;li&gt;Solutions tested&lt;/li&gt;&#xA;&lt;li&gt;What you&amp;rsquo;re learning&lt;/li&gt;&#xA;&lt;li&gt;Decisions made&lt;/li&gt;&#xA;&lt;li&gt;Your plans (day / week / 6 months)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;No novels.&#xA;Raw notes. Factual. Versioned.&lt;/p&gt;&#xA;&lt;p&gt;Like a logbook.&lt;/p&gt;&#xA;&lt;p&gt;These files become:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;your external memory&lt;/li&gt;&#xA;&lt;li&gt;your decision history&lt;/li&gt;&#xA;&lt;li&gt;your shared context&lt;/li&gt;&#xA;&lt;li&gt;the fuel for your prompts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Instead of saying:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agent Pipeline</title>
-      <link>http://localhost:1313/en/posts/agent-pipeline/</link>
+      <link>https://notarianni.org/en/posts/agent-pipeline/</link>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/agent-pipeline/</guid>
+      <guid>https://notarianni.org/en/posts/agent-pipeline/</guid>
       <description>&lt;p&gt;A prompt to design your own agent pipeline.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# The Problem&#xA;&#xA;I want to design a pipeline to feed and orchestrate a set of agents.&#xA;&#xA;Two main topics to design:&#xA;1. **What is a code agent?**&#xA;2. **How to build a context (prompt), submit it to the agent, and verify the result**&#xA;&#xA;The overall goal is to keep a pipeline that is **simple**, **observable**, and **iterable**.&#xA;&#xA;# What is a code agent?&#xA;&#xA;A code agent works on my team&amp;#39;s repositories:&#xA;* repo A&#xA;* repo B&#xA;* repo C&#xA;* repo D&#xA;&#xA;Characteristics:&#xA;&#xA;* It runs **locally** on the machine.&#xA;* It operates via a **Ralph Wiggum loop**, with a well-defined prompt.&#xA;  https://awesomeclaude.ai/ralph-wiggum&#xA;* It is autonomous within its scope, but must remain **auditable**&#xA;  and **reproducible**.&#xA;&#xA;## Open Questions&#xA;&#xA;### Repository Organization&#xA;&#xA;* In which directories should we place the repos?&#xA;* Ideally, **each agent has its own Git copies** of the 4 repos.&#xA;* The agent must be able to:&#xA;&#xA;  * create branches,&#xA;  * modify code,&#xA;  * make commits,&#xA;    without interfering with other agents or the human work environment.&#xA;&#xA;### Submitting Context to the Agent&#xA;&#xA;* How to provide context to the agent?&#xA;* Probably via **a set of files**.&#xA;* Where to place them?&#xA;* How to clearly distinguish:&#xA;&#xA;  * the source code,&#xA;  * the context provided to the agent,&#xA;  * the artifacts produced by the agent?&#xA;&#xA;&#xA;### Temporary Working Files&#xA;* When an agent needs to create intermediate files:&#xA;  * where should they live?&#xA;* Constraints:&#xA;  * don&amp;#39;t pollute Git repos,&#xA;  * don&amp;#39;t mix with context,&#xA;  * be clearly tied to **a specific execution**.&#xA;&#xA;### Output&#xA;&#xA;* At the end of its execution, the agent must be able to produce:&#xA;  * a **summary report** of what it did,&#xA;  * decisions made,&#xA;  * changes performed,&#xA;  * any blocking points.&#xA;&#xA;# Building a Context, Submitting It, and Verifying the Result&#xA;&#xA;Each time an agent is invoked, we submit a **prompt** to it.&#xA;This prompt is built from a **context**.&#xA;This context itself is composed of a **set of files**.&#xA;&#xA;The key question therefore becomes: How to organize these context files?&#xA;&#xA;## Towards an Explicit Work Unit&#xA;&#xA;Each *prompt / context / task* (the name remains to be defined)&#xA;could be materialized by:&#xA;&#xA;* **a dedicated directory**, provided to the agent at launch,&#xA;* containing:&#xA;  * context files,&#xA;  * possibly rules or constraints,&#xA;  * and serving as a single entry point.&#xA;&#xA;At the end of execution:&#xA;&#xA;* the agent writes its results **in this same directory**:&#xA;  * report,&#xA;  * logs,&#xA;  * decisions,&#xA;  * links to commits or branches created.&#xA;&#xA;## Global Organization&#xA;&#xA;* All these task directories would be stored **in the same place**.&#xA;* Objectives:&#xA;  * centralized management,&#xA;  * pipeline simplicity,&#xA;  * visibility over all agent work.&#xA;&#xA;## Review and Continuous Improvement&#xA;&#xA;We want to be able to:&#xA;&#xA;* read and review these **contexts / prompts / tasks**,&#xA;* understand what worked well or not,&#xA;* identify:&#xA;  * what is ready to be merged,&#xA;  * what needs adjustments,&#xA;  * what can be reused as a &amp;#34;pattern&amp;#34;.&#xA;&#xA;The challenge is not just execution, but **capitalization**:&#xA;continuously improve the quality of contexts and, by extension,&#xA;the quality of results produced by agents.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I launched this prompt this week to create my own agent pipeline.&#xA;I now have a complete pipeline running locally on my machine, with agents looping in &lt;em&gt;&amp;ldquo;Ralph Wiggum&amp;rdquo;&lt;/em&gt; fashion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Should You Use BMAD, Spec-Kit, and Other AI Frameworks?</title>
-      <link>http://localhost:1313/en/posts/ai-frameworks/</link>
+      <link>https://notarianni.org/en/posts/ai-frameworks/</link>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/ai-frameworks/</guid>
+      <guid>https://notarianni.org/en/posts/ai-frameworks/</guid>
       <description>&lt;p&gt;At the beginning of 2026, it&amp;rsquo;s now clear to many that AI &lt;strong&gt;works&lt;/strong&gt; — and works very well. Experimentation is everywhere: everyone is testing, exploring, adjusting, in a continuous flourishing of ideas, workflows, and practices.&lt;/p&gt;&#xA;&lt;p&gt;When exchanging feedback with my peers, the same refrain regularly comes up: &lt;strong&gt;BMAD&lt;/strong&gt;, &lt;strong&gt;Spec-Kit&lt;/strong&gt;, or other &amp;ldquo;turnkey&amp;rdquo; frameworks supposedly designed to effectively structure work with AI.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;You want to drive development through specs? You should use Spec-Kit.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/en/about/</link>
+      <link>https://notarianni.org/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/about/</guid>
+      <guid>https://notarianni.org/en/about/</guid>
       <description>&lt;p&gt;I am a software creator interested in eXtreme Programming and software design.&lt;/p&gt;&#xA;&lt;p&gt;Opinions are my own and not the views of my employer.&lt;/p&gt;&#xA;&lt;p&gt;My articles are my own. My opinions are my own.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Contacts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/notarianni/&#34;&gt;https://www.linkedin.com/in/notarianni/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/BernardNotarianni&#34;&gt;https://github.com/BernardNotarianni&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

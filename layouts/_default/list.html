@@ -4,10 +4,14 @@
 
 <ul class="posts-list">
 {{ range .Pages }}
+{{ if eq .Type "posts" }}
+{{ range .Pages }}
 <li>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ if .Date }} - <small>{{ .Date.Format "2006-01-02" }}</small>{{ end }}
 </li>
+{{ end }}
+{{ end }}
 {{ end }}
 </ul>
 {{ end }}
